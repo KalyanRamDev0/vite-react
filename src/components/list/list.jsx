@@ -31,6 +31,7 @@ export const Listitems=()=>{
              <li>pensil</li>
              <li>pen</li>
              <li>chaco</li>
+             <li>chaco</li>
              
          </div>
     )
