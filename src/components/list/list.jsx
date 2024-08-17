@@ -27,7 +27,11 @@ export const Listitems=()=>{
          <div>
              <li>apple</li>
              <li>papaya</li>
+             <li>banana</li>
              <li>mango</li>
+             <li>orange</li>
+             <li>lemon</li>
+             <li>papad</li>
              
          </div>
     )

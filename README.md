@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 git 
 1.working directory
 2.code collb
+3.vite project
+4.project

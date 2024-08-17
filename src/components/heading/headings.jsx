@@ -4,6 +4,7 @@
 const MainHeading=()=>{
     return(
         <h1>welcome user</h1>
+        
     )
 }
 export default MainHeading
