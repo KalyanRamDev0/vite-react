@@ -4,6 +4,7 @@ import { CustomOrderList } from "./components/list.jsx";
 import { SecondaryMainHeading } from "./components/heading.jsx";
 import  MainHeading from "./components/heading.jsx";
 import CoustomButton from "./components/button.jsx";
+import CustomImage from "./components/image.jsx";
 
 
 
@@ -24,6 +25,7 @@ const App=()=>{
     <MainHeading></MainHeading>
     <SecondaryMainHeading></SecondaryMainHeading>
     <CoustomButton></CoustomButton>
+    <CustomImage></CustomImage>
   </div>
  ) 
 }
