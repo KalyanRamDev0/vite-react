@@ -4,35 +4,45 @@
 
 
 
-const CustomList=()=>{
+const CustomList=(prop)=>{
+    const{List}=prop
     return(
        <ul>
-        <ListItems></ListItems>
+   <>
+{
+List.map((eachfruit)=>{
+    return <li>{eachfruit}</li>
+     })
+     }
+    
+        
+        </>
+    
        </ul>
     )
 }
 export default CustomList;
 
- export const CustomOrderList=()=>{
-    return(
-      <ol>
-      <ListItems></ListItems>
+//  export const CustomOrderList=()=>{
+//     return(
+//       <ol>
+//       <ListItems></ListItems>
      
-      </ol>
-      )
-}
+//       </ol>
+//       )
+// }
 
- export const ListItems=()=>{
-    const Fruits=["mango","banana","kiwi","orange","papaya"]
-    return(
-        <>
-{Fruits.map((eachfruit)=>{
-    return(<li>{eachfruit}</li>) })}
+//  export const ListItems=()=>{
+//     const Fruits=["mango","banana","kiwi","orange","papaya"]
+//     return(
+//         <>
+// {Fruits.map((eachfruit)=>{
+//     return <li>{eachfruit}</li> })}
     
         
-        </>
+//         </>
     
-    )
+//     )
        
  
-}
+// }
