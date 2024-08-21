@@ -1,48 +1,50 @@
 
 
 
-
-
-
 const CustomList=(prop)=>{
-    const{List}=prop
+    const{list}=prop
     return(
-       <ul>
-   <>
-{
-List.map((eachfruit)=>{
-    return <li>{eachfruit}</li>
-     })
-     }
-    
-        
-        </>
-    
-       </ul>
+        <ol>
+        <>
+        {
+        list.map((eachFruit,index)=>{
+            return <li key={index} >{eachFruit}</li>
+        })
+        }
+            </>
+        </ol>
     )
 }
-export default CustomList;
 
-//  export const CustomOrderList=()=>{
-//     return(
-//       <ol>
-//       <ListItems></ListItems>
-     
-//       </ol>
-//       )
-// }
+export default CustomList
 
-//  export const ListItems=()=>{
-//     const Fruits=["mango","banana","kiwi","orange","papaya"]
-//     return(
-//         <>
-// {Fruits.map((eachfruit)=>{
-//     return <li>{eachfruit}</li> })}
-    
-        
-//         </>
-    
-//     )
-       
- 
-// }
+
+export const CustomOrderedList=()=>{
+    return(
+        <ol>
+            <ListItems/>
+        </ol>
+    )
+}
+
+
+const ListItems=()=>{
+
+    const Fruits=["Apple","Banana","Kiwi","Mango","Orange"]
+    return(
+        <>
+        {
+        Fruits.map((eachFruit)=>{
+            return <li>{eachFruit}</li>
+        })
+        }
+            </>
+
+
+
+
+    )
+}
+
+
+// DRY : DONT REPEAT YOURSELF
