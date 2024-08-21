@@ -6,16 +6,12 @@
 
 
 
- export const MainHeading=()=>{
+ export const MainHeading=(prop)=>{
+    const{heading}=prop
     return(
        <>
-        <h1>hello user kalyan</h1>
-        <h1>hello user kalyan</h1>
-        <h1>hello user kalyan</h1>
-        <h1>hello user kalyan</h1>
-        <h1> kalyan</h1>
-        <h1>hello</h1>
-        <h1>user </h1>
+       <h1>{heading}</h1>
+        
         </>
     )
 }
