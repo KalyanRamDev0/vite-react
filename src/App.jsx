@@ -1,20 +1,30 @@
 
+import CustomList from "./components/list.jsx"
+import { CustomOrderList } from "./components/list.jsx";
+import { SecondaryMainHeading } from "./components/heading.jsx";
+import  MainHeading from "./components/heading.jsx";
+import CoustomButton from "./components/button.jsx";
 
-import CustomList from "./components/list/list.jsx"
-import { CustomOrderlist } from "./components/list/list.jsx"
-import {MainHeading,SecondaryMainHeading}  from "./components/heading/headings.jsx"
 
 
-const App =()=>{
-  return(
-    <div className="hello">
-      <h2>hello world</h2>
-      <CustomList></CustomList>
-      <CustomOrderlist></CustomOrderlist>
-      <MainHeading></MainHeading>
-      <SecondaryMainHeading></SecondaryMainHeading>
-      
-    </div>
-  )
+
+const App=()=>{
+
+ return(
+  <div>
+    <ul>
+       <li>mango</li>
+       <li>banana</li>
+       </ul>
+    <h1>hello posi </h1>
+    <CustomList></CustomList>
+    <CustomList></CustomList>
+    <CustomList></CustomList>
+    <CustomOrderList></CustomOrderList>
+    <MainHeading></MainHeading>
+    <SecondaryMainHeading></SecondaryMainHeading>
+    <CoustomButton></CoustomButton>
+  </div>
+ ) 
 }
-export default App
+export default App;
