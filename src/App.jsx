@@ -1,10 +1,14 @@
 
-import CustomList from "./components/list.jsx"
-import { CustomOrderList } from "./components/list.jsx";
-import { SecondaryMainHeading } from "./components/heading.jsx";
-import  MainHeading from "./components/heading.jsx";
+//import LoginComponent from "./components/login";
 import CoustomButton from "./components/button.jsx";
-import CustomImage from "./components/image.jsx";
+import Greeting from "./components/greeting/greeting.jsx";
+import style from "./components/greeting/greeging.module.css"
+import Customcard from "./components/bootstrap/custom-card.jsx";
+import { employeeDetails } from "./components/data/employeedata.js";
+import FirstComponent from "./components/bootstrap/first-component.jsx";
+import BasicExample from "./components/bootstrap/navbar.jsx";
+
+
 
 
 
@@ -12,20 +16,26 @@ import CustomImage from "./components/image.jsx";
 const App=()=>{
 
  return(
-  <div>
-    <ul>
-       <li>mango</li>
-       <li>banana</li>
-       </ul>
-    <h1>hello posi </h1>
-    <CustomList></CustomList>
-    <CustomList></CustomList>
-    <CustomList></CustomList>
-    <CustomOrderList></CustomOrderList>
-    <MainHeading></MainHeading>
-    <SecondaryMainHeading></SecondaryMainHeading>
-    <CoustomButton></CoustomButton>
-    <CustomImage></CustomImage>
+  <div >
+   {/* hello kalyan
+   <div className={style.card}> hello kalyan</div>
+   <CoustomButton/>
+   <Greeting/>
+   */}
+   {/* {
+    employeeDetails.map(each=>{
+return(
+    <>
+     <Customcard     title={each.name} text={each.designation}/>
+    </>
+)
+
+
+    })
+   } */}
+  {/* <Customcard     title={"john"} text={"software dev"}/> */}
+  <FirstComponent></FirstComponent>
+  <BasicExample></BasicExample>
   </div>
  ) 
 }

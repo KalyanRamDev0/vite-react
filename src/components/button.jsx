@@ -5,10 +5,13 @@
 
 
 
-const CoustomButton =()=>{
+const CoustomButton =(prop)=>{
+    const {text="button",onPress=()=>{},}=prop
+    const buttonText="Click me"
+    const buttonStyles={backgroundColor:"green", color:"red"}
 return(
-    <button onClick={()=>{}}>clickme</button>
+    <button  style={buttonStyles} onClick={onPress}   >{text}</button>
     
 )
 }
-export default CoustomButton;
+export default CoustomButton
