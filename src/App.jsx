@@ -7,6 +7,7 @@ import Customcard from "./components/bootstrap/custom-card.jsx";
 import { employeeDetails } from "./components/data/employeedata.js";
 import FirstComponent from "./components/bootstrap/first-component.jsx";
 import BasicExample from "./components/bootstrap/navbar.jsx";
+import YouTubeButton from "./components/classcomp/youtube.jsx";
 
 
 
@@ -17,6 +18,7 @@ const App=()=>{
 
  return(
   <div >
+    <YouTubeButton></YouTubeButton>
    {/* hello kalyan
    <div className={style.card}> hello kalyan</div>
    <CoustomButton/>
@@ -34,8 +36,8 @@ return(
     })
    } */}
   {/* <Customcard     title={"john"} text={"software dev"}/> */}
-  <FirstComponent></FirstComponent>
-  <BasicExample></BasicExample>
+  {/* <FirstComponent></FirstComponent>
+  <BasicExample></BasicExample> */}
   </div>
  ) 
 }
