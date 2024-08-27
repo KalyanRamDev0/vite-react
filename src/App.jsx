@@ -7,6 +7,8 @@ import Customcard from "./components/bootstrap/custom-card.jsx";
 import { employeeDetails } from "./components/data/employeedata.js";
 import FirstComponent from "./components/bootstrap/first-component.jsx";
 import BasicExample from "./components/bootstrap/navbar.jsx";
+import Mounting from "./components/lifecycle/lifecycle.jsx";
+import Child from "./components/lifecycle/child.jsx";
 
 
 
@@ -34,8 +36,10 @@ return(
     })
    } */}
   {/* <Customcard     title={"john"} text={"software dev"}/> */}
-  <FirstComponent></FirstComponent>
-  <BasicExample></BasicExample>
+  {/* <FirstComponent></FirstComponent>
+  <BasicExample></BasicExample> */}
+  <Mounting color="red"/>
+  <Child></Child>
   </div>
  ) 
 }
