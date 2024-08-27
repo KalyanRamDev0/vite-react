@@ -7,6 +7,7 @@ import Customcard from "./components/bootstrap/custom-card.jsx";
 import { employeeDetails } from "./components/data/employeedata.js";
 import FirstComponent from "./components/bootstrap/first-component.jsx";
 import BasicExample from "./components/bootstrap/navbar.jsx";
+import CardAddition from "./components/cardtask/card-add.jsx";
 
 
 
@@ -34,8 +35,10 @@ return(
     })
    } */}
   {/* <Customcard     title={"john"} text={"software dev"}/> */}
-  <FirstComponent></FirstComponent>
-  <BasicExample></BasicExample>
+  {/* <FirstComponent></FirstComponent>
+  <BasicExample></BasicExample> */}
+  <CardAddition></CardAddition>
+
   </div>
  ) 
 }
