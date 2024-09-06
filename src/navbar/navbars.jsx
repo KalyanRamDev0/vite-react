@@ -1,5 +1,6 @@
-import { NavLink } from "react-bootstrap"
-// import { Link } from "react-router-dom"
+//import { NavLink } from "react-bootstrap"
+  import { Link } from "react-router-dom"
+ import "./navBar.css"
 
 
 
@@ -30,21 +31,20 @@ const NavBar=()=>{
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item" style={liStyle}>
-          <NavLink style={linkStyle} to={"/"}>Main screen</NavLink>
+          <Link style={linkStyle} to={"/"}>Main screen</Link>
         </li>
         <li className="nav-item">
           
         </li>
         <li className="nav-item dropdown" style={liStyle}>
-          <NavLink style={linkStyle} to={"/about"}>About Screen</NavLink>
+          <Link style={linkStyle} to={"/about"}>About Screen</Link>
+          
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
+            <Link style={linkStyle} to={"/*"}>pade 404 not found</Link>
             </li>
             <li>
-              
+            <Link style={linkStyle} to={"/setting"}>setting Screen</Link>
             </li>
             <li>
               <hr className="dropdown-divider" />

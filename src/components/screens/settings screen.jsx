@@ -6,11 +6,11 @@ import NavBar from "../../navbar/navbars"
 
 
 
-const AboutScreen=()=>{
+const settingScreen=()=>{
     return(
 <>
 <NavBar/>
-<h2>welcome to about screen</h2>
+<h2>welcome to setting screen</h2>
 
 
 
@@ -20,4 +20,4 @@ const AboutScreen=()=>{
 
     )
 }
-export default AboutScreen
+export default settingScreen
