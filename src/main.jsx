@@ -4,9 +4,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationStack from './navigations/navigation-stack.jsx'
+import { BrowserRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <NavigationStack/>
+  <NavigationStack>
+    <BrowserRouter/>
+  </NavigationStack>
   </StrictMode>,
 )
