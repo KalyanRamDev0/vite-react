@@ -21,7 +21,7 @@ const NavigationStack=()=>{
 <Routes>
 <Route path="/" element={<HomeScreen/>}></Route>
 <Route path="/about" element={<AboutScreen/>}></Route>
-<Route path="/setting" element={<settingScreen/>}></Route>
+
 <Route path="/*" element={<InvalidScreen/>}></Route>
 
 

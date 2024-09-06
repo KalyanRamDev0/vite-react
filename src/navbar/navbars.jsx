@@ -41,7 +41,7 @@ const NavBar=()=>{
           
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-            <Link style={linkStyle} to={"/*"}>pade 404 not found</Link>
+            <Link style={linkStyle} to={"/InvalidScreen"}>pade 404 not found</Link>
             </li>
             <li>
             <Link style={linkStyle} to={"/setting"}>setting Screen</Link>
