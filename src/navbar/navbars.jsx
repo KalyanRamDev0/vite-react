@@ -19,6 +19,9 @@ const NavBar=()=>{
             <li className="nav-item" style={liStyle} >
             <NavLink  to={"about"} >About </NavLink>
             </li>
+            <li className="nav-item" style={liStyle} >
+            <NavLink  to={"category"} >CategoryScreen </NavLink>
+            </li>
            
           </ul>
         </div>

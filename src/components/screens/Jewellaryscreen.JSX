@@ -1,15 +1,30 @@
+import React, { useEffect,useState } from "react"
+import axios from "axios"
 
 
+ export const JewellaryScreen=()=>{
+    const [data,setData]=useState([])
 
 
-const Jewellaryscreen=()=>{
-    return(
-<>
-<h2>jewellaryscreen</h2>
-
-
-</>
-        
-    )
-}
-export default Jewellaryscreen 
+    useEffect(()=>{fetchData()},[])
+    const fetchData=async()=>{
+    
+        try{
+        const response=await axios.get("https://fakestoreapi.com/products/category/jewelery")
+    if(response.status==200){
+        setData(response.data)
+    }
+        }catch(err){
+    console.error(err)
+    
+    }}
+        return(
+        <div>
+            jewelery items are 
+            {data.map(each=><>
+            <pre>{JSON.stringify(each)}</pre></>)}
+            </div>
+        )
+    }
+    
+ 

@@ -3,6 +3,10 @@ import HomeScreen from "../components/screens/home-screens"
 import AboutScreen from "../components/screens/about-screen"
 import InvalidScreen from "../components/screens/invalid screen"
 import CategoryScreen from "../components/screens/catogory-screen"
+import { ElectronicsScreen } from "../components/screens/electronics"
+import { JewellaryScreen } from "../components/screens/Jewellaryscreen.jsx"
+import { ProductDetailScreen } from "../components/screens/productdetailscreen.jsx"
+import{ProductScreen} from "../components/screens/productscreen.jsx"
 
 
 
@@ -26,10 +30,14 @@ const NavigationStack=()=>{
 
 <Route path="/*" element={<InvalidScreen/>}></Route>
 <Route path="category" element={<CategoryScreen/>}>
-<Route path="" element={<Jewellaryscreen/>}></Route>
-<Route path="" element={<ElectronicsScreen/>}></Route>
+<Route index element={<ElectronicsScreen/>}/>
+<Route path="Jewellary" element={<JewellaryScreen/>}></Route>
+<Route path="Electronics" element={<ElectronicsScreen/>}></Route>
 
 </Route>
+<Route path="/Products" element={<ProductScreen/>}></Route>
+<Route path="/Products/:productId" element={<ProductDetailScreen/>}></Route>
+
 
 
 
