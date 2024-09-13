@@ -6,8 +6,10 @@
 // import Customcard from "./components/bootstrap/custom-card.jsx";
 // import { employeeDetails } from "./components/data/employeedata.js";
 // import FirstComponent from "./components/bootstrap/first-component.jsx";
-// import BasicExample from "./components/bootstrap/navbar.jsx";
-import UseReduserExample from "./components/hooks/userreduser.jsx";
+
+import UseMemo from "./components/hooks/usememo";
+
+// import UseReduserExample from "./components/hooks/userreduser.jsx";
 
 
 
@@ -18,7 +20,9 @@ const App=()=>{
 
  return(
   <div >
-    <UseReduserExample/>
+    <UseMemo/>
+    {/* <UseReduserExample/> */}
+    
    {/* hello kalyan
    <div className={style.card}> hello kalyan</div>
    <CoustomButton/>
