@@ -1,7 +1,9 @@
-import { legacy_createStore } from "redux";
+import { legacy_createStore as createStore } from "redux";
 import { ticketReducer } from "./reduce";
+//import { rootReducer } from "../profile/combine-reducer";
+//import { thunk } from "redux-thunk";
 
 
 
 
-export  const reduxData=legacy_createStore(ticketReducer);
+export  const reduxData=createStore(ticketReducer);

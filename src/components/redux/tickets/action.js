@@ -1,13 +1,19 @@
-import { BOOK_TICKETS } from "./actions-type"
+import { BOOK_TICKETS, CANCEL_TICKETS } from "./actions-type"
 
 
 
 
 
-const bookedTickets=(qty)=>{
+ export const bookedTickets=(qty)=>{
     return {
-        type:BOOK_TICKETS
-        payload:qty
+        type:BOOK_TICKETS,
+        payload:qty,
+    };
+};
+export const cancelTickets=(qty)=>{
+    return {
+        type:CANCEL_TICKETS,
+        payload:qty,
     };
 };
 
