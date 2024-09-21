@@ -1,4 +1,5 @@
-import { cancelTickets } from "./action";
+
+import { BOOK_TICKETS, CANCEL_TICKETS } from "./actions-type";
 
 const initialState = {
     totalTickets:100,
@@ -10,9 +11,9 @@ const initialState = {
 
  export const ticketReducer=(state=initialState,action)=>{ 
     switch(action.type){
-        case "BOOK_TICKETS" :
+        case BOOK_TICKETS :
             return {...state,bookedTickets:state.bookedTickets+action.payload}
-            case "CANCEL_TICKETS" :
+            case CANCEL_TICKETS :
                 return{...state,cancelTickets:state.cancelTickets+action.payload}
 default:
     return state;

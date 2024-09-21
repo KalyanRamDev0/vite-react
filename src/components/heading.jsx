@@ -30,17 +30,18 @@ import { cancelTickets } from "./redux/tickets/action"
 
 
  export const SecondaryMainHeading=()=>{
-  const kalyandATA =useSelector(state=>state)
+  const kalyandATA =useSelector(state=>state.products)
   console.log('kalyanredux',kalyandATA)
   const dispatch=useDispatch()
 
 
     return(
         <>
-        <button  onClick={()=>dispatch(cancelTickets(10))}>cancelTickets</button>
+       <div>{products.map(each=><pre>{JSON.stringify(each)}</pre>)}</div>
+        {/* <button  onClick={()=>dispatch(cancelTickets(10))}>cancelTickets</button>
         <h1>cancelledtickets.{kalyandATA.cancelTickets}</h1>
         <h1>totalTickets.{kalyandATA.totalTickets}</h1>
-        <h2>bookedTickets{kalyandATA.bookedTickets}</h2>
+        <h2>bookedTickets{kalyandATA.bookedTickets}</h2> */}
         </>
     )
 }
