@@ -1,12 +1,10 @@
+import Experience from "./components/home/experience";
+import Gallery from "./components/home/gallery";
+import Homemainbanner from "./components/home/homemainbanner";
+import Services from "./components/home/services";
+import Tours from "./components/home/tours";
 
-//import LoginComponent from "./components/login";
-import CoustomButton from "./components/button.jsx";
-import Greeting from "./components/greeting/greeting.jsx";
-import style from "./components/greeting/greeging.module.css"
-import Customcard from "./components/bootstrap/custom-card.jsx";
-import { employeeDetails } from "./components/data/employeedata.js";
-import FirstComponent from "./components/bootstrap/first-component.jsx";
-import BasicExample from "./components/bootstrap/navbar.jsx";
+
 
 
 
@@ -17,25 +15,15 @@ const App=()=>{
 
  return(
   <div >
-   {/* hello kalyan
-   <div className={style.card}> hello kalyan</div>
-   <CoustomButton/>
-   <Greeting/>
-   */}
-   {/* {
-    employeeDetails.map(each=>{
-return(
-    <>
-     <Customcard     title={each.name} text={each.designation}/>
-    </>
-)
-
-
-    })
-   } */}
-  {/* <Customcard     title={"john"} text={"software dev"}/> */}
-  <FirstComponent></FirstComponent>
-  <BasicExample></BasicExample>
+    <Homemainbanner/>
+    <Services/>
+    <div className="container">
+                <button className='btn btn-warning rounded-5 mb-2 px-4 py-0' id='btn-font'>Explore</button>
+                <h1>Our featured tours</h1>
+            </div>
+    <Tours/>
+    <Experience/>
+    {/* <Gallery/> */}
   </div>
  ) 
 }
